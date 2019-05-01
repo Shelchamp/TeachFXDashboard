@@ -1,0 +1,28 @@
+.navbar{
+  height: 40px;
+  padding-right: 20px;
+  /* border-bottom: 1px solid #4f5e71;; */
+  width: 99%;
+  z-index: 90;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.13);
+  transform: translateZ(0) translateY(0);
+  background-color: #0bf;
+  /* background-color: #36465d; */
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-left: 50px;
+  margin-top: 10px;
+  float: left;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  margin-right: -3px;
+  color: #ffff; 
+  font-size: 20px;
+}
+
+#ita{
+    font-style: italic;
+}

@@ -28,7 +28,7 @@ export default class PieChart extends React.Component {
             }]
         }
         return (
-            <div>
+            <div className="pie-chart">
                 <CanvasJSChart options={options}
                 // onRef={ref => this.chart = ref}
                     />

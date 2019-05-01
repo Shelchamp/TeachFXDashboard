@@ -31,7 +31,7 @@ export default class ColumnChart extends React.Component {
             ]
         }
         return (
-            <div>
+            <div className="column-chart">
                 <CanvasJSChart options={options}
                 /* onRef={ref => this.chart = ref} */
                 />

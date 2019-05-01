@@ -1,12 +1,39 @@
 .bold {
     font-weight: bold;
+    color: #fff;
 }
 
 .widget-title:hover{
     cursor: pointer
 }
 
-#graph{
+.widget-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.graph{
     width: 100x;
     height: 100px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 95px 95px 95px 95px;
+  grid-gap: 5px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #0bf;
+  /* color: #fff; */
+  border-radius: 5px;
+  border: solid #444 2px;
+  padding: 20px;
+  font-size: auto;
+  height: 50px;
+  width: 50px;
+  font-style: normal;
+  text-align: center;
 }

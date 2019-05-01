@@ -1,0 +1,7 @@
+.line-chart, .column-chart, .bar-chart, .pie-chart{
+    width : 65%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+

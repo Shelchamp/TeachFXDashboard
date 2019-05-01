@@ -12,8 +12,8 @@ export default class BarChart extends React.Component {
                 text: this.props.title ? this.props.title : "No title given"
             },
             axisX: {
-                title: this.props.xAxis ? this.props.xAxis : "No x axis given",
-                reversed: true,
+                title: this.props.xAxis ? this.props.xAxis : "No x axis given"
+                // reversed: true,
             },
             axisY: {
                 title: this.props.yAxis ? this.props.yAxis : "No y axis given"
@@ -38,7 +38,7 @@ export default class BarChart extends React.Component {
             }]
         }
         return (
-            <div>
+            <div className="bar-chart">
                 <CanvasJSChart options={options}
                 /* onRef={ref => this.chart = ref} */
                 />

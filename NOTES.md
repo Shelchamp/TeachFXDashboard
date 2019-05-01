@@ -81,9 +81,9 @@
 <!-- * What role uses TeachFX -->
 <!-- * What subject uses TeachFX -->
 <!-- * Add widgets to let users access different graphs -->
-* Style widgets
+<!-- * Student talk trend over time - formatting data is most unique. x: date, y: talk % -->
+<!-- * Style widgets -->
 * What role records most - basic column chart
 * What subject records most - basic column
-* Student talk trend over time
 * Info about whether reach their student talk goals
-* Create widgets for each one
+<!-- * Create widgets for each one -->

@@ -108,3 +108,63 @@ export const lookAtUsersSubj = function(users) {
 
     return {data : data, totalUsers : total}
 }
+
+export const lookAtStudentTalkTrendAll = function(recordings){
+    // We need to sort the data
+    let data = recordings.map(recording => {
+        return {
+            date : new Date(Date.parse(recording.startDateTime)), // Needs to be formatted in milliseconds for the component
+            num : recording.studentTalk
+        }
+    })
+    return data.sort((a, b) => a.date.getTime() - b.date.getTime());
+    // return data;
+}
+
+export const studentTalkTrendByYear = function(recordings, year){
+    // Filter dates by year
+    let data = recordings.filter(date => date.startDateTime.slice(0, 4) === String(year))
+
+    // Format data for our component
+    data = data.map(recording => {
+        return {
+            date: new Date(Date.parse(recording.startDateTime)), // Needs to be formatted in milliseconds for the component
+            num: recording.studentTalk
+        }
+    })
+
+    // Sort the data
+    return data.sort((a, b) => a.date.getTime() - b.date.getTime());
+}
+
+export const studentTalkAverageByMonth = function(recordings, year){
+    
+    // Filter by year
+    let data = recordings.filter(date => date.startDateTime.slice(0, 4) === String(year));
+    
+    // Format data by month
+    let months = {};
+    data.forEach(date =>{
+        let month = Number(date.startDateTime.slice(5, 7));
+
+        if (months[month] === undefined) {
+            months[month] = {
+                totalPercent : 0,
+                count : 0
+            };
+        }
+        months[month].count++;
+        months[month].totalPercent += date.studentTalk;
+    })
+    // Find the averages
+    let averagedData = Object.keys(months).map(key =>{
+        return {
+            month : key,
+            num : Math.round(months[key].totalPercent / months[key].count),//Calculate average
+            year : year
+        }
+    })
+    return averagedData;
+
+
+}
