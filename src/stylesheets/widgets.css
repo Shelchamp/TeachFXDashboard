@@ -1,0 +1,12 @@
+.bold {
+    font-weight: bold;
+}
+
+.widget-title:hover{
+    cursor: pointer
+}
+
+#graph{
+    width: 100x;
+    height: 100px;
+}

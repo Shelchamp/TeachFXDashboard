@@ -1,6 +1,6 @@
 import React from 'react';
 import CanvasJSReact from '../assets/canvasjs.react';
-var CanvasJS = CanvasJSReact.CanvasJS;
+// var CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 export default class BarChart extends React.Component {
@@ -9,14 +9,14 @@ export default class BarChart extends React.Component {
             animationEnabled: true,
             theme: "light2",
             title: {
-                text: this.props.title ? this.props.title : "Most Popular Social Networking Sites"
+                text: this.props.title ? this.props.title : "No title given"
             },
             axisX: {
-                title: this.props.xAxis ? this.props.xAxis : "Social Network",
+                title: this.props.xAxis ? this.props.xAxis : "No x axis given",
                 reversed: true,
             },
             axisY: {
-                title: this.props.yAxis ? this.props.yAxis : "Monthly Active Users"
+                title: this.props.yAxis ? this.props.yAxis : "No y axis given"
                 // labelFormatter: this.addSymbols
             },
             data: [{

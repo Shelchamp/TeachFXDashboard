@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import './stylesheets/widgets.css';
+import './stylesheets/reset.css';
 
 // Import components
 import PieChart from "./components/pie_chart";
 import ColumnChart from "./components/column_chart";
 import BarChart from "./components/bar_chart";
+import WidgetIndex from "./components/widget_index";
 
 // Import data
 import {objData, arrayData} from "./data/formatted_data";
@@ -38,7 +41,8 @@ class App extends Component {
             // dataPoints={test}
             /> */}
             {/* <ColumnChart title={"Users by Role"} dataPoints={test}/> */}
-            <BarChart title={"Users by Subject Taught"} xAxis={"Subjects"} yAxis={"Users"} dataPoints={test}/>
+            {/* <BarChart title={"Users by Subject Taught"} xAxis={"Subjects"} yAxis={"Users"} dataPoints={test}/> */}
+            <WidgetIndex/>
       </div>
     );
   }

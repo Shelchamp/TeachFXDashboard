@@ -12,7 +12,7 @@ export default class PieChart extends React.Component {
             // exportEnabled: true, // This turns off the dropdown
             animationEnabled: true,
             title: {
-                text: this.props.title ? this.props.title : "" // Chart title
+                text: this.props.title ? this.props.title : "No title given" // Chart title
             },
             data: [{
                 type: "pie",

@@ -7,8 +7,9 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 export default class ColumnChart extends React.Component {
     render() {
         const options = {
+            animationEnabled: true,
             title: {
-                text: this.props.title ? this.props.title : "Basic Column Chart"
+                text: this.props.title ? this.props.title : "No title given"
             },
             data: [
                 {
