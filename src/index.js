@@ -5,6 +5,7 @@ import './index.css';
 
 // Testing
 // import PieChart from "./components/pie_chart";
+// import PieChart from "./components/column_chart";
 
 ReactDOM.render(
   <App />,

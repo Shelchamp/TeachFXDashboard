@@ -74,3 +74,12 @@
       * Use a library to speed up developement
     * Create a pie chart for each recording for talk %s
       
+
+**To Dos**
+<!-- * Pie chart for talk % -->
+<!-- * Pie chart for platform use -->
+* What role records most - basic column chart
+* What subject records most - basic column
+* Student talk trend over time
+* Info about whether reach their student talk goals
+* Create widgets for each one
