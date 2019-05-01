@@ -8,19 +8,24 @@ export default class ColumnChart extends React.Component {
     render() {
         const options = {
             title: {
-                text: "Basic Column Chart"
+                text: this.props.title ? this.props.title : "Basic Column Chart"
             },
             data: [
                 {
                     // Change type to "doughnut", "line", "splineArea", etc.
                     type: "column",
-                    dataPoints: [
-                        { label: "Apple", y: 10 },
-                        { label: "Orange", y: 15 },
-                        { label: "Banana", y: 25 },
-                        { label: "Mango", y: 30 },
-                        { label: "Grape", y: 28 }
-                    ]
+                    dataPoints: this.props.dataPoints ? this.props.dataPoints.data.map(point=>{
+                        return {
+                            label: point.label,
+                            y: point.num
+                        }
+                    }) : [
+                            { label: "One", y: 10 },
+                            { label: "Two", y: 20 },
+                            { label: "Three", y: 30 },
+                            { label: "Four", y: 40 },
+                            { label: "Five", y: 50 }
+                        ]
                 }
             ]
         }

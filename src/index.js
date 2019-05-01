@@ -5,9 +5,9 @@ import './index.css';
 
 // Testing
 // import PieChart from "./components/pie_chart";
-// import PieChart from "./components/column_chart";
+// import ColumnChart from "./components/column_chart";
 
 ReactDOM.render(
-  <App />,
+  <App/>,
   document.getElementById('root')
 );

@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import './App.css';
 
 // Import components
-import PieChart from "./components/pie_chart"
+import PieChart from "./components/pie_chart";
+import ColumnChart from "./components/column_chart";
+import BarChart from "./components/bar_chart";
+
 // Import data
 import {objData, arrayData} from "./data/formatted_data";
 console.log("Here is our state:");
 console.log(objData);
 
+// Import helper functions
+import { lookAtPlatform, lookAtTalkPerc, lookAtUsersSubj, lookAtUsersRole} from "./formatting/data_formatting_functions";
 const testRecording = arrayData.recordings[0];
 
 console.log("Here is a sameple recording");
@@ -16,11 +21,11 @@ console.log(testRecording);
 
 
 
-// let test = lookAtPlatform(arrayData.recordings);
+let test = lookAtUsersSubj(arrayData.users);
 
 
 console.log("Here is some test data");
-// console.log(test);
+console.log(test);
 
 class App extends Component {
   
@@ -28,10 +33,12 @@ class App extends Component {
     return (
       <div className="App">
           {/* Pie chart that shows talk % */}
-          <PieChart 
+          {/* <PieChart 
             // title={"Platform Usage"}
             // dataPoints={test}
-            />
+            /> */}
+            {/* <ColumnChart title={"Users by Role"} dataPoints={test}/> */}
+            <BarChart title={"Users by Subject Taught"} xAxis={"Subjects"} yAxis={"Users"} dataPoints={test}/>
       </div>
     );
   }

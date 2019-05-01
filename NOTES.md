@@ -78,6 +78,8 @@
 **To Dos**
 <!-- * Pie chart for talk % -->
 <!-- * Pie chart for platform use -->
+<!-- * What role uses TeachFX -->
+<!-- * What subject uses TeachFX -->
 * What role records most - basic column chart
 * What subject records most - basic column
 * Student talk trend over time
